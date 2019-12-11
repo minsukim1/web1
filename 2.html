@@ -1,17 +1,71 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>WEB2 - CSS</title>
-  </head>
+<!doctype html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154460963-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154460963-1');
+</script>
+<style>
+body {
+  margin: 0;
+}
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding: 20px;
+  }
+  ol {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left: 33px;
+  }
+  #article{
+    padding-left: 25px;
+  }
+  @media(max-width:700px){
+    #grid{
+      display: block;
+    }
+    ol {
+      border-right: none;
+    }
+    h1 {
+      border-bottom: none;
+    }
+
+  }
+</style>
+<title>WEB2 - CSS</title>
+<meta charset="utf-8">
+</head>
   <body>
     <h1><a href="index.html" title="WEB main">WEB</a></h1>
+    <div id="grid">
   <ol>
     <li><a href="1.html" title="HTML">HTML</a></li>
     <li><a href="2.html" title="CSS">CSS</a></li>
     <li><a href="3.html" title="JavaScript">JavaScript</a></li>
   </ol>
+    <div id="article">
     <h2>CSS</h2>
     <p><a href="https://terms.naver.com/entry.nhn?docId=1179641&cid=40942&categoryId=32854"
       target="_blank" title="CSS Specification">CSS</a>는
@@ -19,5 +73,7 @@
     세세한 스타일 지정의 필요를 줄어들게 하였다.</p>
     <p>HTML을 이용해서 웹 페이지를 제작할 경우 전반적인 틀에서 세세한 글꼴 하나 하나를 일일이 지정해주어야 하지만, 웹 페이지의 스타일(작성형식)을 미리 저장해 두면 웹 페이지의 한 가지 요소만 변경해도 관련되는 전체 페이지의 내용이 한꺼번에 변경되므로,
       문서 전체의 일관성을 유지할 수 있고 작업 시간도 단축된다</p>
+    </div>
+    </div>
   </body>
 </html>
